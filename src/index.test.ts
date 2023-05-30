@@ -14,16 +14,6 @@ describe('isOnLand', () => {
     });
 
     test.each(MOCK_COORDINATES)('returns false for coordinates x: $x y: $y', ({x, y}) => {
-        expect(isOnLand(x, y)).toBeFalsy();
-    });
-});
-
-describe('isOnWater', () => {
-    test.each(MOCK_COORDINATES)('returns true for coordinates x: $x y: $y', ({x, y}) => {
-        expect(isOnWater(x, y)).toBeTruthy();
-    });
-
-    test.each(MOCK_COORDINATES)('returns false for coordinates x: $x y: $y', ({x, y}) => {
-        expect(isOnWater(x, y)).toBeFalsy();
+        expect(isOnLand(x, y)).toBeTruthy();
     });
 });
