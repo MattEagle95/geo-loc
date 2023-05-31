@@ -3,10 +3,10 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   collectCoverage: true,
-  collectCoverageFrom: ["./src/**"],
+  collectCoverageFrom: ['./src/**'],
   coverageThreshold: {
     global: {
-      lines: 80
-    }
-  }
+      lines: 80,
+    },
+  },
 };
