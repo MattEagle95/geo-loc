@@ -1,5 +1,6 @@
 {
-  "name": "geo-loc",
+  "name": "@matteagle95/geo-loc",
+  "private": false,
   "version": "1.0.0",
   "description": "A library to check if coordinates are on land or on water.",
   "main": "dist/index.js",
@@ -8,7 +9,8 @@
     "build": "tsc",
     "test": "jest",
     "lint": "eslint --ext .js,.ts .",
-    "prettier": "prettier"
+    "prettier": "prettier --check --ignore-path .gitignore .",
+    "prettier:fix": "prettier --write --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
